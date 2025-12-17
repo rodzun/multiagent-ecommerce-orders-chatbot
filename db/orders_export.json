@@ -1,0 +1,119 @@
+[
+    {
+        "order_id": 1,
+        "product_name": "LG C3 OLED 55-inch",
+        "quantity": 3,
+        "customer_name": null,
+        "price": 1499.0,
+        "total_price": 4497.0,
+        "timestamp": "2025-12-17 13:25:02"
+    },
+    {
+        "order_id": 2,
+        "product_name": "LG C3 OLED 55-inch",
+        "quantity": 1,
+        "customer_name": null,
+        "price": 1499.0,
+        "total_price": 1499.0,
+        "timestamp": "2025-12-17 13:28:01"
+    },
+    {
+        "order_id": 3,
+        "product_name": "LG C3 OLED 55-inch",
+        "quantity": 1,
+        "customer_name": null,
+        "price": 1499.0,
+        "total_price": 1499.0,
+        "timestamp": "2025-12-17 13:29:10"
+    },
+    {
+        "order_id": 4,
+        "product_name": "Bose QuietComfort Ultra",
+        "quantity": 2,
+        "customer_name": null,
+        "price": 429.0,
+        "total_price": 858.0,
+        "timestamp": "2025-12-17 13:33:55"
+    },
+    {
+        "order_id": 5,
+        "product_name": "Bose QuietComfort Ultra",
+        "quantity": 2,
+        "customer_name": null,
+        "price": 429.0,
+        "total_price": 858.0,
+        "timestamp": "2025-12-17 13:34:25"
+    },
+    {
+        "order_id": 6,
+        "product_name": "Sonos Era 100",
+        "quantity": 2,
+        "customer_name": null,
+        "price": 249.0,
+        "total_price": 498.0,
+        "timestamp": "2025-12-17 13:34:59"
+    },
+    {
+        "order_id": 7,
+        "product_name": "AirPods Pro (2nd Gen)",
+        "quantity": 1,
+        "customer_name": null,
+        "price": 249.0,
+        "total_price": 249.0,
+        "timestamp": "2025-12-17 13:35:40"
+    },
+    {
+        "order_id": 8,
+        "product_name": "AirPods Pro (2nd Gen)",
+        "quantity": 1,
+        "customer_name": "Rodrigo",
+        "price": 249.0,
+        "total_price": 249.0,
+        "timestamp": "2025-12-17 13:38:00"
+    },
+    {
+        "order_id": 9,
+        "product_name": "Nespresso Vertuo Next",
+        "quantity": 1,
+        "customer_name": "Customer",
+        "price": 179.0,
+        "total_price": 179.0,
+        "timestamp": "2025-12-17 20:24:11"
+    },
+    {
+        "order_id": 10,
+        "product_name": "iRobot Roomba j7+",
+        "quantity": 1,
+        "customer_name": "Customer",
+        "price": 599.0,
+        "total_price": 599.0,
+        "timestamp": "2025-12-17 20:24:11"
+    },
+    {
+        "order_id": 11,
+        "product_name": "MacBook Air M3",
+        "quantity": 2,
+        "customer_name": "Anonymous",
+        "price": 1099.0,
+        "total_price": 2198.0,
+        "timestamp": "2025-12-17 20:43:29"
+    },
+    {
+        "order_id": 12,
+        "product_name": "MacBook Air M3",
+        "quantity": 2,
+        "customer_name": "Customer",
+        "price": 1099.0,
+        "total_price": 2198.0,
+        "timestamp": "2025-12-17 20:46:05"
+    },
+    {
+        "order_id": 13,
+        "product_name": "DJI Mini 4 Pro",
+        "quantity": 1,
+        "customer_name": "User",
+        "price": 759.0,
+        "total_price": 759.0,
+        "timestamp": "2025-12-17 20:52:42"
+    }
+]
