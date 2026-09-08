@@ -231,7 +231,7 @@ Reasons:
 - Low dependency footprint
 
 ---
-## 🧪 Tests
+## 🧪 Manual Test Scenarios
 The project includes test cases covering:
 
 - Product retrieval queries
@@ -246,7 +246,7 @@ The project includes test cases covering:
 
 Located in:
 ```bash
-tests/test_conversations.md
+examples/test_conversations.md
 ```
 
 ---
