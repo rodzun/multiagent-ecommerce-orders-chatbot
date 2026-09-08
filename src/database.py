@@ -25,7 +25,6 @@ def init_db():
     Base.metadata.create_all(engine)
 
 def create_order(order_model: OrderModel) -> int:
-    session = Session()
     db_order = Order(
         product_name=order_model.product_name,
         quantity=order_model.quantity,
@@ -33,19 +32,21 @@ def create_order(order_model: OrderModel) -> int:
         total_price=order_model.total_price,
         customer_name=order_model.customer_name
     )
-    session.add(db_order)
-    session.commit()
-    # Refresh to get the auto-generated ID
-    session.refresh(db_order)
-    order_id = db_order.order_id
-    session.close()
-    return order_id
+    with Session() as session:
+        try:
+            session.add(db_order)
+            session.commit()
+            session.refresh(db_order)
+            return db_order.order_id
+        except Exception:
+            session.rollback()
+            raise
 
-def get_order_by_id(order_id: int) -> dict:
-    session = Session()
-    order = session.query(Order).filter_by(order_id=order_id).first()
-    session.close()
-    if order:
+def get_order_by_id(order_id: int) -> dict | None:
+    with Session() as session:
+        order = session.query(Order).filter_by(order_id=order_id).first()
+        if order is None:
+            return None
         return {
             'order_id': order.order_id,
             'product_name': order.product_name,
@@ -55,7 +56,6 @@ def get_order_by_id(order_id: int) -> dict:
             'total_price': order.total_price,
             'timestamp': order.timestamp
         }
-    return None
 
 def export_orders_to_json(filepath: str = "./db/orders_export.json"):
     """
