@@ -232,7 +232,7 @@ Reasons:
 
 ---
 ## 🧪 Manual Test Scenarios
-The project includes test cases covering:
+The following scenarios were manually verified:
 
 - Product retrieval queries
 
