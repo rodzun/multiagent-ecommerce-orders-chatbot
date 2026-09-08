@@ -138,6 +138,8 @@ def main():
                     obs = tool_search_products(fn_args['query'])
                 elif fn_name == "tool_create_order":
                     obs = tool_create_order(fn_args['product_name'], fn_args.get('quantity', 1), fn_args['customer_name'])
+                else:
+                    obs = f"Error: unknown tool '{fn_name}'."
                 
                 chat_history.append({
                     "tool_call_id": call.id,
