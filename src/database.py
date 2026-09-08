@@ -59,8 +59,8 @@ def get_order_by_id(order_id: int) -> dict:
 
 def export_orders_to_json(filepath: str = "./db/orders_export.json"):
     """
-    Exporta todas las órdenes de la base de datos SQLite a un JSON bonito.
-    Usa sqlite3 puro para máxima compatibilidad y simplicidad (ideal para demos).
+    Exports all orders from the SQLite database to a pretty-printed JSON file.
+    Uses plain sqlite3 for maximum compatibility and simplicity.
     """
     db_path = os.getenv('DATABASE_PATH', './db/orders.db')
     

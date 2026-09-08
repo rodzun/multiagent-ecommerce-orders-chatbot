@@ -31,7 +31,7 @@ def load_rag_system():
 vector_db = load_rag_system()
 
 def tool_search_products(query: str):
-    """Busca productos en el Vector Store."""
+    """Search for products in the Vector Store."""
     print(f"🔍 [RAG Agent] Searching for: {query}")
     docs = vector_db.similarity_search(query, k=3)
     
@@ -43,7 +43,7 @@ def tool_search_products(query: str):
     return "\n".join(results) if results else "No products found."
 
 def tool_create_order(product_name: str, quantity: int, customer_name: str):
-    """Procesa y persiste la orden en la DB SQL."""
+    """Process and persist the order in the SQL DB."""
     print(f"📦 [Order Agent] Processing order for: {product_name}")
     
     init_db()
