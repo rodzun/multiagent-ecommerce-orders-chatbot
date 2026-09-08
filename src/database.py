@@ -65,9 +65,7 @@ def export_orders_to_json(filepath: str = "./db/orders_export.json"):
     db_path = os.getenv('DATABASE_PATH', './db/orders.db')
     
     if not os.path.exists(db_path):
-        print(f"Error: Database not found at {db_path}")
-        print("   Make sure you have run init_db() and created at least one order.")
-        return
+        raise FileNotFoundError(f"Database not found at {db_path}. Run init_db() and create at least one order first.")
     
     conn = sqlite3.connect(db_path)
     conn.row_factory = sqlite3.Row
